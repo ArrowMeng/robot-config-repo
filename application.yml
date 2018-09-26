@@ -21,6 +21,9 @@ ribbon:
 spring:
   rabbitmq:
     host: robot-rabbitmq
+    port: 5672
+    username: admin
+    password: 888888
   sleuth:
     sampler:
       percentage: 1
