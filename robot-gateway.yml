@@ -20,7 +20,7 @@ ribbon:
 zuul:
   ignoredServices: '*'
   routes:
-    auth-service:
+    robot-auth-service:
       path: /uaa/**
       stripPrefix: false
       sensitiveHeaders:
