@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: 10.253.2.79
+    hostname: robot-registry
     prefer-ip-address: true
   client:
     service-url:
@@ -20,7 +20,7 @@ ribbon:
 
 spring:
   rabbitmq:
-    host: 10.253.2.79
+    host: robot-rabbitmq
     port: 5672
     username: admin
     password: 888888
@@ -33,14 +33,9 @@ spring:
       skip-pattern: "^org.*HystrixStreamTask$"
 
 authserver:
-    hostname: 10.253.2.79
-    port: 5000
+    hostname: robot-auth-service
+    port: 8010
     contextPath: /uaa
-
-mysqlserver:
-  hostname: 10.253.2.79
-  username: root
-  password: hejun123
 
 security:
   oauth2:
